@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,RouterLink } from '@angular/router';
 
 //Components 
 
@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
       CommonModule, 
       RouterOutlet,
+      RouterLink,
       NavbarComponent,
       HeaderComponent,
       AboutComponent,

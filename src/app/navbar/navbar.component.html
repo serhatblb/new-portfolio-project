@@ -1,34 +1,16 @@
-<!-- Page Navbar -->
-<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-    <div class="container">
-        <a class="logo" href="#">Meyawo</a>
-        <ul class="nav">
-            <li class="item">
-                <a class="link" href="#home">Home</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#about">About</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#testmonial">Testmonial</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#blog">Blog</a>
-            </li>
-            <li class="item">
-                <a class="link" href="#contact">Contact</a>
-            </li>
-            <li class="item ml-md-3">
-                <a href="components.html" class="btn btn-primary">Components</a>
+<nav class="navbar" [ngClass]="{'scrolled': isScrolled}">
+    <div class="navbar-content">
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img [src]="navBar.logo.logoPicture" height="30" alt="Logo" loading="lazy" class="rounded-1" />
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item"></li>
+
+            <li *ngFor="let temp of navBar.navbar" class="nav-item">
+                <a class="nav-link" href="{{ temp.link }}">
+                    {{ temp.name | titlecase }}
+                </a>
             </li>
         </ul>
-        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-            <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-            </div>
-        </a>
     </div>
-</nav><!-- End of Page Navbar -->
+</nav>
