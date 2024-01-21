@@ -1,0 +1,9 @@
+Sıfırdan C++ ve Programlama Öğrenin - Udemy - 21.12.2020
+Django 3 Profesyonel Web Programlama - Udemy - 10.02.2022
+Django Rest Framework Eğitim Seti, Udemy - 20.02.2022
+Build Rest APIs with Django Rest Framework and Python - Udemy - 27.02.2022
+Versiyon Kontrolleri: git ve Github - BTK Akademi - 21.05.2022
+Backend Development With Altogic - Altogic,Zemin İstanbul, Yazılım Köyü - 02.07.2022
+HTML5 ile Web Geliştirme - BTK Akademi - 05.09.2023
+Sıfırdan İleri Düzey Web Gelistirme(HTML,CSS,Javascript) - Udemy - 09.10.2023
+Typescript - Udemy - 06.01.2024
