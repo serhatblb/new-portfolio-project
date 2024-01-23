@@ -6,7 +6,7 @@ export class BlogCard {
   title: string;
   text: string;
   description: string;
-  // img: string;
+  img: string;
   author: string;
   date: Date;
 
@@ -17,7 +17,7 @@ export class BlogCard {
     title: string,
     text: string,
     description: string,
-    // img: string,
+    img: string,
     author: string,
     date: Date
 
@@ -28,7 +28,7 @@ export class BlogCard {
     this.title = title;
     this.text = text;
     this.description = description;
-    // this.img = img;
+    this.img = img;
     this.author = author;
     this.date = date;
   }

@@ -18,7 +18,7 @@ export class BlogComponent {
         title: "Serhat",
         text: "A library is a collection of pieces of code, usually to perform certain functions or perform certain tasks.",
         description: "Description 1",
-        // img: '../imgs/blog-1.jpg',
+        img: '../../assets/imgs/blog-1.jpg',
         author: 'User 1',
         date: new Date()
       },
@@ -28,7 +28,7 @@ export class BlogComponent {
         title: "Serhat",
         text: "Meaning and Structure: Semantic tags clearly define the content and purpose, while Non-Semantic tags are used only to apply formatting or styling and do not specify the meaning of the content. ",
         description: "Description 2",
-        // img: '../imgs/blog-2.jpg',
+        img: '../../assets/imgs/blog-2.jpg',
         author: 'User 2',
         date: new Date()
       },
@@ -38,7 +38,7 @@ export class BlogComponent {
         title: "Serhat",
         text: "CDN is an infrastructure used to accelerate and distribute content provider over the internet",
         description: "Description 3",
-        // img: '../imgs/blog-3.jpg',
+        img: '../../assets/imgs/blog-3.jpg',
         author: 'User 3',
         date: new Date()
       }       
