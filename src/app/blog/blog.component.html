@@ -2,30 +2,44 @@
 <section class="section" id="blog">
     <!-- container -->
     <div class="container text-center">
+
         <p class="section-subtitle">Recent Posts?</p>
         <h6 class="section-title mb-6">Blog</h6>
 
-
-        <!-- blog-wrapper -->
-        <div class="blog-card" *ngFor="let temp of blogCard">
-            <div class="blog-card-header">
-                <img [src]="temp.img" class="blog-card-img" alt="Blog 1">
-
-            </div>
-            <div class="blog-card-body">
-                <h5 class="blog-card-title">{{temp.header}} </h5>
-
-                <p class="blog-card-caption">
-                    <a href="#">{{temp.author}} </a>
-                </p>
-                <p>{{temp.description}} </p>
-
-                <p>{{temp.text}} </p>
-                <p>{{temp.date | date: 'dd.MM.yy'}} </p>
-
-                <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-            </div>
-        </div><!-- end of blog wrapper -->
-
+        <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
+        <ng-template #blog>
+            <!-- blog-card-wrapper -->
+            <div class="blog-card" *ngFor="let temp of blogCard|slice:1:5">
+                <div class="blog-card-header">
+                    <img [src]="temp.img" class="blog-card-img" alt="Blog 1">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">{{temp.header}} </h5>
+                    <p class="blog-card-caption">
+                        <a href="#">{{temp.author}} </a>
+                    </p>
+                    <p>{{temp.description}} </p>
+                    <p>{{temp.text}} </p>
+                    <p>{{temp.date | date: 'dd.MM.yy'}} </p>
+                    <a href="#" class="blog-card-link">Read more
+                        <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+        </ng-template>
+        <ng-template #noBlogCard>
+            <form action="#">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="text" title="blog ara" placeholder="Blog ara" class="form-control mb-3" />
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary">Ara</button>
+                        </div>
+                        <div class="alert alert-primary mt-2">Blog Yoktur</div>
+                    </div>
+                </div>
+            </form>
+        </ng-template>
     </div><!-- end of container -->
 </section><!-- end of blog section -->
