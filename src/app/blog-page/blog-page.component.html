@@ -1,1 +1,68 @@
-<p>blog-page works!</p>
+<!-- blog section -->
+<section class="section" id="blog">
+    <!-- container -->
+
+    <div class="container text-center">
+
+        <p class="section-subtitle">Recent Posts?</p>
+
+        <h6 class="section-title mb-6">Blog</h6>
+
+        <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
+        <ng-template #blog>
+            <!-- Blog Search  -->
+            <div class="form-group" mt-4 mb-4>
+                <input type="text" class="form-control" id="blogcategory" placeholder="Blog Ara ..."
+                    [(ngModel)]="dataBlogFilterCategory">
+
+                <div *ngIf="dataBlogFilterCategory" class="alert alert-danger alert-dismissible fade show mt-2"
+                    role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    Gosterilen Blog Category<strong> {{dataBlogFilterCategory}} </strong>
+                </div>
+
+            </div>
+            <!-- end-blog-search -->
+
+            <!-- blog-card-wrapper -->
+            <div class="blog-card" *ngFor="let temp of blogCard | searchBlogFilter:dataBlogFilterCategory">
+
+                <div class="blog-card-header">
+
+                    <img [src]="temp.img" class="blog-card-img" alt="Blog 1">
+                </div>
+                <a>
+                    <div class="blog-card-body">
+                        <h5 class="blog-card-title">{{temp.header}} </h5>
+                        <p class="blog-card-caption">
+                            <a href="#">{{temp.author}} </a>
+                        </p>
+                        <p>{{temp.description}} </p>
+                        <p>{{temp.text}} </p>
+                        <p style="color: red;">Catagory: {{temp.categoryName}} </p>
+                        <p>{{temp.date | date: 'dd.MM.yy'}} </p>
+                        <!-- <a (click)="detailPage()" [href]="temp.link" class="blog-card-link">Read more
+                            <i class="ti-angle-double-right"></i></a> -->
+                        <a class="blog-card-link">Read more
+                            <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </a>
+            </div><!-- end of blog wrapper -->
+        </ng-template>
+        <ng-template #noBlogCard>
+            <form action="#">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="text" title="blog ara" placeholder="Blog ara" class="form-control mb-3" />
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary">Ara</button>
+                        </div>
+                        <div class="alert alert-primary mt-2">Blog Yoktur</div>
+                    </div>
+                </div>
+            </form>
+        </ng-template>
+    </div><!-- end of container -->
+</section><!-- end of blog section -->

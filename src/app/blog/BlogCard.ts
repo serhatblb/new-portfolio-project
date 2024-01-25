@@ -8,6 +8,8 @@ export class BlogCard {
   description: string;
   img: string;
   author: string;
+  link: string;
+  categoryName:string;
   date: Date;
 
   // constructor
@@ -19,6 +21,8 @@ export class BlogCard {
     description: string,
     img: string,
     author: string,
+    link: string,
+    categoryName:string,
     date: Date
 
 
@@ -30,6 +34,8 @@ export class BlogCard {
     this.description = description;
     this.img = img;
     this.author = author;
+    this.link = link;
+    this.categoryName = categoryName;
     this.date = date;
   }
 
