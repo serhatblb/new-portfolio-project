@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 // Router Link
 import { RouterLink } from '@angular/router';
 import { BlogCard } from '../blog/BlogCard';
-import { SearchBlogFilterPipe} from './search-blog-filter.pipe'
+import { SearchBlogFilterPipe} from '../custom-pipline/search-blog-filter.pipe'
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -23,6 +23,7 @@ export class BlogPageComponent {
   dataBlogFilterCategory="";
 
 
+
   //BlogCard
   blogCard: BlogCard[] = [
     {
@@ -34,7 +35,7 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-1.jpg',
       author: 'User 1',
       link:'blog',
-      categoryName:'backend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     },
     {
@@ -46,7 +47,7 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-2.jpg',
       author: 'User 2',
       link:'blog',
-      categoryName:'frontend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     },
     {
@@ -58,7 +59,7 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-3.jpg',
       author: 'User 3',
       link:'blog',
-      categoryName:'frontend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     },
     {
@@ -70,7 +71,7 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-1.jpg',
       author: 'User 1',
       link:'blog',
-      categoryName:'frontend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     },
     {
@@ -82,7 +83,7 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-2.jpg',
       author: 'User 2',
       link:'blog',
-      categoryName:'frontend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     },
     {
@@ -94,12 +95,12 @@ export class BlogPageComponent {
       img: '../../assets/imgs/blog-3.jpg',
       author: 'User 3',
       link:'blog',
-      categoryName:'frontend',
+      categoryName:this.blogCategoryNameRandom(),
       date: new Date()
     }       
   ];
 
-  constructor() { }
+  constructor() {}
 
   //Method
   detailPage() {
@@ -110,4 +111,24 @@ export class BlogPageComponent {
       alert('Blog Detail Gidilmedi');
     }
   }
+  blogCategoryNameRandom(): string {
+    let categoryNameArray: string[] = [
+      'frontend',
+      'backend',
+      'database',
+      'mobile',
+      'desktop',
+      'network',
+      'security',
+      'game',
+      'ai',
+      'machine-learning',
+      'devops',
+      'testing',
+      'other',
+    ];
+    return categoryNameArray[
+      Math.floor(Math.random() * categoryNameArray.length - 1 + 1)
+    ];
+  };
 }

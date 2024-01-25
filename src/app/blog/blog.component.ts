@@ -1,8 +1,15 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 // BlogCard Ekledim
 import { BlogCard } from './BlogCard';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+
+// SERVICE
+// AlertifyMessageService (Global Service)
+import { AlertifyMessageService } from '../services/alertify-message.service';
+
+// BlogArrayService (Local Service)
+// import { BlogArrayService } from '../services/blog-array.service';
 
 @Component({
   selector: 'app-blog',
@@ -11,7 +18,11 @@ import { RouterLink } from '@angular/router';
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss'
 })
-export class BlogComponent {
+
+  // Local Service İçin Mutlaka providers eklemlisniz.
+  // providers: [BlogArrayService],
+
+export class BlogComponent implements OnInit {
 
   blogCard: BlogCard[] = [
     {
@@ -88,7 +99,15 @@ export class BlogComponent {
     }       
   ];
 
-    constructor() { }
+    constructor(
+      private alertifyMessageService: AlertifyMessageService,
+      // private blogArrayService: BlogArrayService
+    ) { }
+
+    // ngOnInit
+  ngOnInit(): void {
+    this.alertifyMessageService.alertMessage("Welcome...")
+  }
 
     //Method
     detailPage() {
