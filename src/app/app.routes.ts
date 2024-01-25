@@ -6,8 +6,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 
 export const routes: Routes = [
-    {path:'index', component: AboutComponent},
-    {path:'',redirectTo:"index", pathMatch:'full'},
+    // {path:'index', component: AboutComponent},
+    // {path:'',redirectTo:"index", pathMatch:'full'},
     //Blog
     {path:'blog', component: BlogPageComponent},
     //Login
