@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "username": "serhat",
+      "email": "serhat@gmail.com",
+      "password": "123456",
+      "created_date": "22/01/2024"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "email": "deneme2@gmail.com",
+      "password": "123456",
+      "created_date": "19/01/2024"
+    },
+    {
+      "id": 8746,
+      "username": "ali",
+      "email": "ali@gmail.com",
+      "password": "asdf",
+      "created_date": "Tue Jan 30 2024 02:50:17 GMT+0300 (GMT+03:00)"
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "title": "test",
+      "content": "test"
+    }
+  ]
+}
