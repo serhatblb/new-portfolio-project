@@ -49,6 +49,21 @@ ng serve
 
 Tarayıcınızda http://localhost:4200 adresine giderek proje görüntülenebilir.
 
+### Json Server
+
+```
+- json-server --watch portfolio.json --port 2222 (JSON-SERVER)
+- http://localhost:2222/user
+-
+- npm nodemon start    (Node JS)
+```
+
+### Nodejs MongoDB
+
+```
+npm run nodemon
+```
+
 ## Contact Me
 
 If you want to contact me about this project, the channels you can contact are:
