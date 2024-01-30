@@ -1,6 +1,6 @@
 # Benim Portföyüm 🚀
 
-![Görünüm](../portfolio-project/src/app/imgs/header.png)
+![Görünüm](https://github.com/serhatblb/new-portfolio-project/blob/master/src/app/imgs/header.png)
 
 ## Proje Hakkında
 
