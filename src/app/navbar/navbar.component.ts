@@ -41,7 +41,7 @@ export class NavbarComponent {
       },
       { id: 2, name: 'about', link: '#about', fontAwesome: 'font-2' },
       { id: 3, name: 'blog', link: '#blog', fontAwesome: 'font-2' },
-      { id: 4, name: 'education', link: '##education', fontAwesome: 'font-3' },
+      { id: 4, name: 'education', link: '#education', fontAwesome: 'font-3' },
       { id: 5, name: 'contact', link: '#contact', fontAwesome: 'font-4' },
     ],
   }; // end navBar Object
