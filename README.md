@@ -1,27 +1,56 @@
-# PortfolioProject
+# Benim Portföyüm 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+![Görünüm](../portfolio-project/src/app/imgs/header.png)
 
-## Development server
+## Proje Hakkında
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Bu proje, Angular bootcamp'ı sırasında edindiğim bilgileri kullanarak geliştirdiğim kişisel portföy uygulamasını içermektedir. Uygulama, kullanıcıya benim hakkımda bilgi verirken, çalışmalarımı ve yeteneklerimi sergileme imkanı sunar.
 
-## Code scaffolding
+### Ne Öğrendim
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Bu projede birçok yeni teknoloji ve beceri öğrendim. Bunlar arasında şunlar bulunmaktadır:
 
-## Build
+- Angular ve TypeScript kullanımı
+- CSS3 ve Bootstrap ile modern tasarım uygulamaları
+- Animasyon kütüphaneleriyle çalışma
+- Harici kaynaklardan ikon ve font kullanımı
+- Form gönderimini kolaylaştıran araçlar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Kullanılan Teknolojiler
 
-## Running unit tests
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap 5
+- Google Fonts
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Başlangıç
 
-## Running end-to-end tests
+1. Repoyu klonlayın:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+git clone https://github.com/serhatblb/new-portfolio-project
+```
 
-## Further help
+2. Gerekli Olan Paketleri Kurun
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```javascript
+npm install
+```
+
+### Başlatma
+
+Proje başlatmak için aşağıdaki komutları kullanabilirsiniz:
+
+```javascript
+ng serve
+```
+
+Tarayıcınızda http://localhost:4200 adresine giderek proje görüntülenebilir.
+
+## Contact Me
+
+If you want to contact me about this project, the channels you can contact are:
+
+[Gmail](mailto:serhatblb23@gmail.com) | [Linkedin](https://www.linkedin.com/in/serhatbulbul/)
