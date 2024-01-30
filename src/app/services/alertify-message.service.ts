@@ -1,42 +1,40 @@
 import { Injectable } from '@angular/core';
 
-//Alertify
-declare let alertify:any;
+// Alertify
+declare let alertify: any;
 
-//
+// Global State veya Local Service State için yazmalısınız
+// @Injectable({
+//   providedIn: 'root' //providedIn: Kaldırırsam Local Service olacaktır.
+// })
+
+// GLOBAL_SERVICE (providedIn yazmalısınız)
 @Injectable({
-  providedIn: 'root' // global olması için yazarız
+  providedIn: 'root',
 })
+
+//EXPORT
 export class AlertifyMessageService {
+  // Constructor
+  constructor() {}
 
-  constructor() { }
-
-  //Success
-  alertSuccess(message:string){
+  // Success
+  alertSuccess(message: string) {
     alertify.success(message);
   }
 
-  //Message
-  alertMessage(message:string){
+  // Warning
+  alertWarning(message: string) {
+    alertify.warning(message);
+  }
+
+  // Message
+  alertMessage(message: string) {
     alertify.message(message);
   }
 
-  //Warning
-  alertWarning(message:string){
-    alertify.warning(message);
-  }
-  
-  //Error
-  alertError(message:string){
+  // Error
+  alertError(message: string) {
     alertify.error(message);
   }
-  
-  //Info
-  alertInfo(message:string){
-    alertify.info(message);
-  }
-  
-  
-  
-  
-}
+} //end AlertifyMessageService
