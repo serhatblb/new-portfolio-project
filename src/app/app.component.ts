@@ -2,8 +2,16 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet,RouterLink } from '@angular/router';
 
-//Components 
+//API
+import { HttpClientModule } from '@angular/common/http';
 
+// SERVICE (AlertifyMessageService)
+import { AlertifyMessageService } from './services/alertify-message.service';
+
+// SERVICE (UserRegisterService)
+import { UserRegisterService } from './services/user-register.service';
+
+//Components 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
@@ -27,8 +35,12 @@ import { ContactComponent } from './contact/contact.component';
       EducationComponent,
       CertificatesComponent,
       FooterComponent,
-      ContactComponent
+      ContactComponent,
+      HttpClientModule
     ],
+
+  providers:[AlertifyMessageService,UserRegisterService],
+  
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -101,19 +101,19 @@ export class BlogComponent implements OnInit {
 
     constructor(
       private alertifyMessageService: AlertifyMessageService,
-      // private blogArrayService: BlogArrayService
+      
     ) { }
 
     // ngOnInit
   ngOnInit(): void {
-    this.alertifyMessageService.alertMessage("Welcome...")
+    // this.alertifyMessageService.alertMessage("Welcome...")
   }
 
     //Method
     detailPage() {
-      alert('Detail Page');
+      // alert('Detail Page');
       if (window.confirm('Detail sayfasına gitmek mi istiyorsunuz')) {
-        window.location.href = 'blog';
+      window.location.href = 'blog';
       } else {
         alert('Blog Detail Gidilmedi');
       }
