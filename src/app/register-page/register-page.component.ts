@@ -38,7 +38,7 @@ export class RegisterPageComponent implements OnInit {
   // ngOnInit (List)
   ngOnInit(): void {
     // AlertifyMessage
-    // this.alertifyMessageService.alertSuccess('Register Sayfasına Hoşgeldiniz');
+    this.alertifyMessageService.alertSuccess('Register Sayfasına Hoşgeldiniz');
     
     this.userRegisterService
       .userListRegisterObservable()

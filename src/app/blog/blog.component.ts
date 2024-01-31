@@ -106,7 +106,7 @@ export class BlogComponent implements OnInit {
 
     // ngOnInit
   ngOnInit(): void {
-    // this.alertifyMessageService.alertMessage("Welcome...")
+    this.alertifyMessageService.alertMessage("Welcome...")
   }
 
     //Method
